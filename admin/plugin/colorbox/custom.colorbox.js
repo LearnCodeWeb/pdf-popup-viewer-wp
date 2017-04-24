@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){jQuery(".ajax").colorbox({width:'95%', height:'90%', fixed:true, scrolling: false, maxWidth:'850px',});});
