@@ -1,4 +1,4 @@
-# PDF-POPUP-VIEWER
+# PDF-POPUP-VIEWER (WP PLUGIN)
 PDF POPUP VIEWER is a very simple plugin with and without POPUP.
 -------------------------------------------------------
 1) Download this plugin and just remove the <strong>(-master)</strong> at the end of the ZIP FILE name.
