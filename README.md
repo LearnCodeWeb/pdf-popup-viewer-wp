@@ -9,3 +9,7 @@ PDF POPUP VIEWER is a very simple plugin with and without POPUP.<br />
   4. It is very simple to upload PDF files. You just need to drag and drop or select files from computer.
   5. On your right side there are some options that are set by default. You can change these options if you want.
   6. You can test POPUP viewer only on a live envoirment.
+
+Thanks to
+
+<a href="http://www.dropzonejs.com/">DROPZONE JS</a>
