@@ -70,7 +70,7 @@ function zPDFpopupViewer_db() {
 		user VARCHAR(512) NOT NULL,
 		ajaxStatus INT(1) NOT NULL DEFAULT '1', 
 		windowTarget VARCHAR(25) NOT NULL,
-		PRIMARY KEY (id),
+		PRIMARY KEY (id)
 	) $charset_collate;";
 	
 	require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
@@ -92,7 +92,7 @@ function zPDFpopupViewer_adv_db() {
 			btnTitle VARCHAR(100) NOT NULL, 
 			btnClass VARCHAR(100) NOT NULL, 
 			datetime TIMESTAMP NOT NULL,
-			PRIMARY KEY (id),
+			PRIMARY KEY (id)
 	) $charset_collate;";
 	
 	require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
