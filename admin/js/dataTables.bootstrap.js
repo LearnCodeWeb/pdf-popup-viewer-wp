@@ -1,7 +1,7 @@
 /* Set the defaults for DataTables initialisation */
 $=jQuery
 $.extend(true, $.fn.dataTable.defaults, {
-    "sDom": "<'row'<'col-sm-6'l><'col-sm-6'f>r>" + "t" + "<'row'<'col-sm-6'i><'col-sm-6'p>>",
+    "sDom": "<'z-popup-t-left'<'z-popup-half'l><'z-popup-half'f>r>" + "t" + "<'z-popup-t-right'<'z-popup-half'i><'z-popup-half'p>>",
     "oLanguage": {
         "sLengthMenu": "_MENU_ &nbsp;Records per page"
     }
@@ -11,8 +11,8 @@ $.extend(true, $.fn.dataTable.defaults, {
 /* Default class modification */
 $.extend($.fn.dataTableExt.oStdClasses, {
     "sWrapper": "dataTables_wrapper form-inline",
-    "sFilterInput": "form-control input-sm",
-    "sLengthSelect": "form-control input-sm"
+    "sFilterInput": "",
+    "sLengthSelect": ""
 });
 
 // In 1.10 we use the pagination renderers to draw the Bootstrap paging,

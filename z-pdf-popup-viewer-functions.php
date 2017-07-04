@@ -68,7 +68,9 @@ function zPDFpopupViewer_db() {
 		date DATE NOT NULL,
 		datetime TIMESTAMP NOT NULL,
 		user VARCHAR(512) NOT NULL,
-		PRIMARY KEY (id)
+		ajaxStatus INT(1) NOT NULL DEFAULT '1', 
+		windowTarget VARCHAR(25) NOT NULL,
+		PRIMARY KEY (id),
 	) $charset_collate;";
 	
 	require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
@@ -89,10 +91,8 @@ function zPDFpopupViewer_adv_db() {
 			btnName VARCHAR(100) NOT NULL, 
 			btnTitle VARCHAR(100) NOT NULL, 
 			btnClass VARCHAR(100) NOT NULL, 
-			ajaxStatus INT(1) NOT NULL DEFAULT '1', 
-			windowTarget VARCHAR(25) NOT NULL,
 			datetime TIMESTAMP NOT NULL,
-			PRIMARY KEY (id)
+			PRIMARY KEY (id),
 	) $charset_collate;";
 	
 	require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
@@ -105,8 +105,7 @@ function zPDFpopupViewer_adv_db() {
 				'btnName' => 'Preview PDF',
 				'btnTitle' => 'PDF Preview',
 				'btnClass' => 'btn-pdf',
-				'ajaxStatus' => 1,
-				'windowTarget' => '_blank',
+
 					);
 	$wpdb->insert( $tableSettind, $data);
 }
