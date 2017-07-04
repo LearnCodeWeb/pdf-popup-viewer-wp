@@ -7,29 +7,10 @@ jQuery(document).ready(function(e) {
         [5, 10, 20, 50, -1],
         [5, 10, 20, 50, "All"]
 		],
-		iDisplayLength: 5,
+		//iDisplayLength: 5,
 	});
-	jQuery(e.trigger).attr('title', 'Copied').tooltip('fixTitle').tooltip('show');
+	jQuery(e.trigger).attr('title', 'Copied');
 });
-
-jQuery(function () {
-	jQuery("body").tooltip({
-		selector: '[data-toggle="tooltip"]',
-		container: 'body'
-	});
-});
-
-/*jQuery('[data-toggle="popover"]').popover({
-    trigger: 'click',
-    placement: 'left',
-    container: 'body',
-	html:true,
-});
-
-jQuery('[data-toggle=popover]').on('click', function (e) {
-   jQuery('[data-toggle=popover]').not(this).popover('hide');
-});*/
-
 
 var clipboard = new Clipboard('#copyButton');
 clipboard.on('success', function(e) {
@@ -44,4 +25,16 @@ clipboard.on('error', function(e) {
 	console.log(e);
 	console.error('Action:', e.action);
     console.error('Trigger:', e.trigger);
+});
+
+var oTable;
+
+jQuery(document).ready(function() {
+	jQuery('.showAll').click( function () {
+		var oSettings = oTable.fnSettings();
+		oSettings._iDisplayLength = -1;
+		oTable.fnDraw();
+	});
+	
+	oTable = jQuery('#dataTables').dataTable();
 });
