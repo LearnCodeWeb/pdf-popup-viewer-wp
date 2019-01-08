@@ -2,11 +2,11 @@
 defined( 'ABSPATH' ) OR exit; 
 /*
 Plugin Name: PDF Files Viewer In POPUP
-Plugin URI: http://www.knns.com.pk
+Plugin URI: https://learncodeweb.com
 Description: PDF VIEWER - Free plugin for PDF popup viewer
 Author: Zaid Bin Khalid
 Version: 1.0.0
-Author URI: http://www.knns.com.pk
+Author URI: https://learncodeweb.com
 */
 include_once('url_path_config.php');
 include_once('admin/class.enqueue.php');
