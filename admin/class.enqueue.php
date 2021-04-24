@@ -10,7 +10,7 @@ function zPDFpopupViewer_admin_bootstrap() {
 	wp_enqueue_style('my-custom');
 	
 	//All compulsory scripts are added
-	wp_register_script('dropzone-plugin-js', zPDFpopupViewer_PLUGIN_MIAN_URL . 'plugin/dropzone/dropzone.js', array ( 'jquery' ), '', true);
+	wp_register_script('dropzone-plugin-js', zPDFpopupViewer_PLUGIN_MIAN_URL . 'plugin/dropzone/dropzone.js', array ( 'jquery' ), '', false);
 	wp_register_script('datatables-plugin-js', zPDFpopupViewer_PLUGIN_MIAN_URL . 'js/jquery.dataTables.js', array ( 'jquery' ), '', true);
 	wp_register_script('datatables-bootstrap-js', zPDFpopupViewer_PLUGIN_MIAN_URL . 'js/dataTables.bootstrap.js', array ( 'jquery' ), '', true);
 	wp_register_script('clipboard-js', zPDFpopupViewer_PLUGIN_MIAN_URL . 'plugin/clipboard/clipboard.min.js', array ( 'jquery' ), '', true);
