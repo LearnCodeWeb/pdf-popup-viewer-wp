@@ -22,7 +22,7 @@ PDF POPUP VIEWER is a very simple plugin with and without POPUP.<br />
     a) Download the source code from GitHub.    
     b) Extract the files in any local folder.    
     c) The inside folder of downloaded zip will be PLUGIN-NAME-master.    
-    d) Rename the inside folder PLUGIN-NAME-master to PLUGIN-NAME. [You just need to remove the last **-main**].    
+    d) Rename the inside folder PLUGIN-NAME-master to PLUGIN-NAME. [You just need to remove the last **-master**].    
     e) Copy and paste folder into the plugins DIR the complete path of Plugin Dir is wp-content->Plugins->PASTE YOUR PLUGIN.    
 
 
